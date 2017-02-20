@@ -1,0 +1,39 @@
+
+<div class="tx-datatable">
+		<script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function (event) {
+                //https://datatables.net/blog/2014-12-18
+                $.fn.dataTable.moment('DD.MM.YYYY HH:mm');
+
+                // DataTable
+                var table = $('.js-data-table').DataTable({
+                    "bJQueryUI": true,
+                    "bStateSave": false,
+                    "iDisplayLength": 500,
+                    "aaSorting": []
+                });
+
+                // Apply the filter
+                table.columns().every(function () {
+                    var that = this;
+
+                    $('input', this.footer()).on('keyup change', function () {
+                        if (that.search() !== this.value) {
+                            that
+                                .search(this.value)
+                                .draw();
+                        }
+                    });
+                });
+
+                expandingContent ();
+
+                scrollingTopBottom ();
+
+
+            });
+		</script>
+
+
+	<f:render section="main"/>
+</div>

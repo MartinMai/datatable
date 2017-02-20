@@ -1,0 +1,29 @@
+this partial is responsible for generating the footer for data-tables aka filter input row
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+>
+<f:layout name="Default"/>
+
+	<f:section name="dataTableFoot">
+		<f:if condition="{activateDatatable}">
+			<tfoot>
+			<f:for each="{datatable}" key="columnNumber" as="column" iteration="columnAmount">
+
+				<f:if condition="{columnAmount.isFirst}">
+					<tr role="row">
+						<f:for each="{column}" key="fieldKey" as="fieldValue">
+							<th class="ui-state-default" rowspan="1" colspan="1">
+								<input type="text" placeholder="Filter" value="{v:variable.get(name: 'columnSettings.{fieldKey}.filter')}">
+							</th>
+						</f:for>
+					</tr>
+				</f:if>
+
+			</f:for>
+			</tfoot>
+		</f:if>
+	</f:section>
+
+
+</div>

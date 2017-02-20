@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-01-02T11:47:18Z" product-name="datatables">
+		<header/>
+		<body>
+			<trans-unit id="flexforms_tab.settings" xml:space="preserve">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="flexforms_general.sourceUrl" xml:space="preserve">
+				<source>source URL</source>
+			</trans-unit>
+			<trans-unit id="flexforms_general.activateDatatable" xml:space="preserve">
+				<source>activate datatable behaviour in frontend (otherwise show bare table)</source>
+			</trans-unit>
+			<trans-unit id="flexforms_general.columns" xml:space="preserve">
+				<source>names of columns, one column per row. Optionally add | and prefilterString</source>
+			</trans-unit>
+			<trans-unit id="flexforms_general.sorting" xml:space="preserve">
+				<source>columnName and direction for default sorting</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

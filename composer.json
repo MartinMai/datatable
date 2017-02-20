@@ -1,0 +1,35 @@
+{
+  "name": "elementareteilchen/datatable",
+  "type": "typo3-cms-extension",
+  "description": "Outputs a table from various sources, mainly JSON from given URLs.",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "datatable"
+  ],
+  "authors": [
+    {
+      "name": "Franz Kugelmann",
+      "role": "Developer",
+      "homepage": "http://elementare-teilchen.de"
+    },
+    {
+      "name": "Benjamin Weber",
+      "role": "Developer",
+      "homepage": "http://elementare-teilchen.de"
+    }
+  ],
+  "license": [
+    "GPL-2.0+"
+  ],
+  "version": "1.0.0",
+  "require": {
+    "typo3/cms-core": ">=7.6.0,<8.0",
+    "cobweb/svconnector_json": ">=2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ElementareTeilchen\\Datatable\\": "Classes"
+    }
+  }
+}

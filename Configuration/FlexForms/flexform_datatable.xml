@@ -1,0 +1,61 @@
+<T3DataStructure>
+	<sheets>
+		<!--
+			################################
+			  SHEET General Settings
+			################################
+		-->
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:datatable/Resources/Private/Language/locallang_be.xlf:flexforms_tab.settings</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<settings.sourceUrl>
+						<TCEforms>
+							<label>LLL:EXT:datatable/Resources/Private/Language/locallang_be.xlf:flexforms_general.sourceUrl</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+							</config>
+						</TCEforms>
+					</settings.sourceUrl>
+
+					<settings.activateDatatable>
+						<TCEforms>
+							<label>LLL:EXT:datatable/Resources/Private/Language/locallang_be.xlf:flexforms_general.activateDatatable</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.activateDatatable>
+
+					<settings.columns>
+						<TCEforms>
+							<label>LLL:EXT:datatable/Resources/Private/Language/locallang_be.xlf:flexforms_general.columns</label>
+							<config>
+								<type>text</type>
+								<cols>100</cols>
+								<rows>10</rows>
+							</config>
+						</TCEforms>
+					</settings.columns>
+
+					<settings.sorting>
+						<TCEforms>
+							<label>LLL:EXT:datatable/Resources/Private/Language/locallang_be.xlf:flexforms_general.sorting</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+							</config>
+						</TCEforms>
+					</settings.sorting>
+
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

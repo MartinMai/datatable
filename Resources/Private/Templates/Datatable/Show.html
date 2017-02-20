@@ -1,0 +1,40 @@
+This Template is responsible for generating the datatable html
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+>
+    <f:layout name="Default"/>
+    <f:section name="main">
+
+        <f:flashMessages/>
+        <f:if condition="{activateDatatable}">
+            <f:then>
+                <div class="dataTable-view-topscroll  js-topscroll">
+                    <div class="scroll-div">
+                    </div>
+                </div>
+                <table class="dataTable  js-data-table">
+                    <f:render section="dataTableContent" arguments="{_all}"/>
+                </table>
+            </f:then>
+            <f:else>
+                <div class="dataTables_wrapper">
+                    <div class="dataTable-view-topscroll  js-topscroll">
+                        <div class="scroll-div">
+                        </div>
+                    </div>
+                    <table class="dataTable">
+                        <f:render section="dataTableContent" arguments="{_all}"/>
+                    </table>
+                </div>
+            </f:else>
+        </f:if>
+    </f:section>
+
+    <f:section name="dataTableContent">
+        <f:render partial="dataTableHead" section="dataTableHead" arguments="{_all}"/>
+        <f:render partial="dataTableFoot" section="dataTableFoot" arguments="{_all}"/>
+        <f:render partial="dataTableBody" section="dataTableBody" arguments="{_all}"/>
+    </f:section>
+
+</div>

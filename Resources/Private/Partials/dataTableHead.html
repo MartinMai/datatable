@@ -1,0 +1,20 @@
+this partial is responsible for generating the header for data-tables
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+>
+	<f:layout name="Default" />
+	<f:section name="dataTableHead">
+		<thead>
+			<f:for each="{datatable}" key="columnNumber" as="column" iteration="columnAmount">
+				<f:if condition="{columnAmount.isFirst}">
+					<tr role="row">
+						<f:for each="{column}" key="fieldKey" as="fieldValue">
+							<th>{fieldKey}</th>
+						</f:for>
+					</tr>
+				</f:if>
+			</f:for>
+		</thead>
+	</f:section>
+</div>

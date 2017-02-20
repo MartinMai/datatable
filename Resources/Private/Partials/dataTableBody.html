@@ -1,0 +1,31 @@
+this partial is responsible for generating the body for data-tables
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" 
+    xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+>
+
+<f:layout name="Default"/>
+
+	<f:section name="dataTableBody">
+		<tbody>
+		<f:for each="{datatable}" key="lineNumber" as="line">
+			<tr role="row">
+				<f:for each="{line}" key="fieldKey" as="fieldValue" iteration="fieldNumber">
+					<td>
+						<div class="data-table__body-text-wrapper  js-dataTable-bodyWrap">
+							<p class="data-table__body-text  js-dataTable-body">
+								{fieldValue -> f:format.raw() -> v:format.removeXss()}
+							</p>
+							<span class="data-table__button  js-dataTableButton">
+
+							</span>
+						</div>
+					</td>
+				</f:for>
+			</tr>
+		</f:for>
+		</tbody>
+	</f:section>
+
+
+</div>

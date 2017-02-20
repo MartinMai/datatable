@@ -1,0 +1,38 @@
+[
+  {
+    "Spalte1": "wert1 zeile 1",
+    "Spalte2": "wert2 zeile 1",
+    "Spalte3": "wert3 zeile 1",
+    "Spalte4": "wert4 zeile 1"
+  },
+  {
+    "Spalte1": "wert1 zeile 2",
+    "Spalte2": "wert2 zeile 2",
+    "Spalte3": "wert3 zeile 2",
+    "Spalte4": "wert4 zeile 2"
+  },
+  {
+    "Spalte1": "wert1 zeile 3",
+    "Spalte2": "wert2 zeile 3",
+    "Spalte3": "wert3 zeile 3",
+    "Spalte4": "wert5 zeile 3"
+  },
+  {
+    "Spalte1": "wert1 zeile 4",
+    "Spalte2": "wert2 zeile 4",
+    "Spalte3": "wert3 zeile 4",
+    "Spalte4": "wert4 zeile 4"
+  },
+  {
+    "Spalte1": "wert1 zeile 5",
+    "Spalte2": "wert2 zeile 5",
+    "Spalte3": "wert3 zeile 5",
+    "Spalte4": "wert4 zeile 5"
+  },
+  {
+    "Spalte1": "wert1 zeile 6",
+    "Spalte2": "wert2 zeile 6",
+    "Spalte3": "wert3 zeile 6",
+    "Spalte4": "wert4 zeile 6"
+  }
+]
